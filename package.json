@@ -1,0 +1,14 @@
+{
+  "name": "ylnime-scraper",
+  "version": "1.0.0",
+  "description": "Scraper untuk ekstrak URL video dari ylnime.com",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build needed'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
