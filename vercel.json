@@ -1,23 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "public/index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/scraper",
-      "dest": "/api/scraper.js"
-    },
-    {
-      "src": "/api/stream",
-      "dest": "/api/stream.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/index.html"
-    }
+  "rewrites": [
+    { "source": "/api/scraper", "destination": "/api/scraper" },
+    { "source": "/api/stream", "destination": "/api/stream" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
